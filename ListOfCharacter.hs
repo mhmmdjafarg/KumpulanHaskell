@@ -51,6 +51,6 @@ inverse :: [Char] -> [Char]
 
 
 inverse lc = if isEmpty lc then []
-			    else konso (last lc) (inverse(init lc))
+	     else konso (last lc) (inverse(init lc))
 				
 
