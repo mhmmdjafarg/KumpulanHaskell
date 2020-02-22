@@ -10,9 +10,9 @@ nbKelipatanX :: Int -> Int -> Int -> Int	-- nbKelipatanX m n x
 
 --Realisasi
 nbKelipatanX m n x = if m == n then -- basis
-						if mod n x == 0 then 1
-						else 0
-					 else
-						if mod n x == 0 then 1 + nbKelipatanX m (n-1) x
-						else nbKelipatanX m (n-1) x
+			if mod n x == 0 then 1
+			else 0
+		     else
+			if mod n x == 0 then 1 + nbKelipatanX m (n-1) x
+			else nbKelipatanX m (n-1) x
 						
